@@ -17,3 +17,7 @@ Projetos relacionados a cursos e estudos de frontend usando react
 
 **ReactNative.**
 Projetos relacionados a cursos e estudos de backend usando react native
+
+**Python.**
+Projetos relacionados a cursos e estudos de python que não estejam ligados ao backend.
+- `ALURA-SPACE` - Projeto de uma aplicação web feita em Django para o curso da Alura.
