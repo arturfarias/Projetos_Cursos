@@ -1,16 +1,13 @@
 from django.contrib import admin
-from escola.models import Aluno, Curso
+from escola.models import Aluno, Curso, Matricula
 
 class Alunos(admin.ModelAdmin):
     list_display = ('id', 'nome', 'rg', 'cpf', 'data_nascimento' )
-    # campos que devem aparecer.
     list_display_links = ('id', 'nome')
-    # informa quais campos devem ser clicaveis pelo editor
     search_fields = ['nome',]
-    # quais campos são possiveis de busca
-    list_per_page = 20 # quantidade de elementos por pagina
+    list_per_page = 20
 
-admin.site.register(Aluno, Alunos) # (model, modelAdmin)
+admin.site.register(Aluno, Alunos)
 
 class Cursos(admin.ModelAdmin):
     list_display = ('id', 'codigo_curso', 'descricao')
@@ -18,3 +15,9 @@ class Cursos(admin.ModelAdmin):
     search_fields = ('codigo_curso',)
 
 admin.site.register(Curso, Cursos)
+
+class Matriculas(admin.ModelAdmin):
+    list_display = ('id', 'aluno', 'curso', 'periodo')
+    list_display_links = ('id',)
+
+admin.site.register(Matricula, Matriculas)
