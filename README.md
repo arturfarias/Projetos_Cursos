@@ -9,6 +9,7 @@ Projetos relacionados a cursos e estudos de backend usando nodejs
 Projetos relacionados a cursos e estudos de backend usando python
 - `tddpython` - Codigos feitos durante o curso de TDD com python feito na Alura.
 - `djangoRestAPI` - Codigos feitos durante o curso "API com Django 3: Django Rest Framework"  feito na Alura.
+- `projeto_inicial_drf_clientes` - Codigos feitos durante o curso "API com Django 3: Validações, buscas, filtros e deploy"  feito na Alura.
 
 **React.**
 Projetos relacionados a cursos e estudos de frontend usando react
