@@ -19,7 +19,8 @@ Projetos relacionados a cursos e estudos de frontend usando react
 - `organoUpdate1` - Atualização do projeto adcionando novos componentes como favoritos, criação de times e cores.
 
 **ReactNative.**
-Projetos relacionados a cursos e estudos de backend usando react native
+Projetos relacionados a cursos e estudos de frontend usando react native
+- `orgs-cesta` - App feito para o curso "React Native: criando um app" feito na Alura.
 
 **Python.**
 Projetos relacionados a cursos e estudos de python que não estejam ligados ao backend.
