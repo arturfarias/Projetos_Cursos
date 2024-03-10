@@ -1,8 +1,8 @@
-import { Image, View, StyleSheet } from 'react-native';
+import { Image, View, StyleSheet, TouchableOpacity } from 'react-native';
 import Texto from '../../Texto'
 import {IDetalhes} from '../../../interfaces/ICesta'
 
-const Detalhes: React.FC<IDetalhes> = ({nome, logo, nomeFazenda, descricao, preco}) => {
+const Detalhes: React.FC<IDetalhes> = ({nome, logo, nomeFazenda, descricao, preco, botao}) => {
   return (
     <>
         <Texto style={styles.nome}>{nome}</Texto>
@@ -12,6 +12,10 @@ const Detalhes: React.FC<IDetalhes> = ({nome, logo, nomeFazenda, descricao, prec
         </View>
         <Texto style={styles.descricao}>{descricao}</Texto>
         <Texto style={styles.preco}>{preco}</Texto>
+
+        <TouchableOpacity style={styles.botao} onPress={() => {}}>
+        <Texto style={styles.textoBotao}>{botao}</Texto>
+        </TouchableOpacity>
     </>
   );
 };
@@ -52,6 +56,21 @@ const styles = StyleSheet.create({
     fontSize: 26,
     lineHeight: 42,
     marginTop: 8,
+  },
+
+  botao:{
+    marginTop: 16,
+    backgroundColor: "#2A9F85",
+    paddingVertical: 16,
+    borderRadius: 6,
+  },
+
+  textoBotao:{
+    textAlign: "center",
+    color: "#ffffff",
+    fontSize: 16,
+    lineHeight: 26,
+    fontWeight: "bold",
   },
 });
 

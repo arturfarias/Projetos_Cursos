@@ -26,7 +26,7 @@ export default function App() {
     return <AppLoading />;
   }
   return (
-    <View>
+    <View style={{flex:1}}>
       <StatusBar />
       <Cesta {...mock} />
     </View>
