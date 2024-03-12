@@ -21,6 +21,7 @@ Projetos relacionados a cursos e estudos de frontend usando react
 **ReactNative.**
 Projetos relacionados a cursos e estudos de frontend usando react native
 - `orgs-cesta` - App feito para o curso "React Native: criando um app" feito na Alura.
+- `orgsHooks` - App feito para o curso "React Native: utilizando e criando Hooks" feito na Alura.
 
 **Python.**
 Projetos relacionados a cursos e estudos de python que não estejam ligados ao backend.
