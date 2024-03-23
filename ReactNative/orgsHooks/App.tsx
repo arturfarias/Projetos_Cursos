@@ -1,16 +1,13 @@
 import React from 'react';
+import { SafeAreaView, StyleSheet } from 'react-native';
 
-import {
-  SafeAreaView,
-  StyleSheet,
-  Text,
-} from 'react-native';
+import Home from './src/telas/Home';
 
 function App(): React.JSX.Element {
 
   return (
     <SafeAreaView>
-     <Text>Curso</Text>
+     <Home />
     </SafeAreaView>
   );
 }
