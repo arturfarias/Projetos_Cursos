@@ -5,8 +5,13 @@ import { useEffect, useState } from 'react';
 import {carregaTopo} from '../../../servicos/carregaDados';
 import logo from '../../../assets/logo.png';
 
+interface TopoData {
+  boasVindas: string;
+  legenda: string;
+}
+
 const Topo: React.FC = () => {
-  const [topoData, setTopoData] = useState({ boasVindas: '', legenda: '' });
+  const [topoData, setTopoData] = useState<TopoData>({ boasVindas: '', legenda: '' });
 
   useEffect(() => {
     async function carregarDados() {
