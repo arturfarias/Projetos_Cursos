@@ -2,10 +2,12 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 
 import  Topo from './componentes/Topo';
+import  Produtores from './componentes/Produtores';
 
 const Home: React.FC = () => {
-  return (
-    <Topo />
+  return (<>
+      <Produtores topo={Topo} />
+  </>
   );
 };
 
